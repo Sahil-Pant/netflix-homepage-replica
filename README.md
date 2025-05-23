@@ -1,31 +1,29 @@
 # 🎬 Netflix Homepage Replica
 
-A visually accurate and responsive replica of the Netflix homepage built with **HTML**, **CSS**, and **JavaScript**. This project showcases modern layout techniques, interactive UI elements, and clean design principles.
-
-![Netflix Clone Preview](https://github.com/Sahil-Pant/netflix-homepage-replica/blob/main/assets/preview.png)
+A responsive and visually accurate replica of the Netflix homepage built using **HTML**, **CSS**, and **JavaScript**. This project focuses on UI layout, styling, and responsiveness to closely mimic the design and feel of Netflix’s official landing page.
 
 ## 🚀 Live Demo
 
-Check out the live version here: [Netflix Homepage Replica 🔗](https://sahil-pant.github.io/netflix-homepage-replica/)
+[🔗 View Project Live](https://sahil-pant.github.io/netflix-homepage-replica/)
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5** – Semantic and structured markup
-- **CSS3** – Responsive layout with Flexbox and Grid
-- **JavaScript** – Basic interactivity
-- **Responsive Design** – Mobile-first approach
+- **HTML5** – Semantic structure
+- **CSS3** – Flexbox, Grid, and media queries for responsiveness
+- **JavaScript** – Basic interactivity and DOM manipulation
 
 ---
 
-## 📸 Screenshots
+## 🔥 Features
 
-| Desktop View | Mobile View |
-|--------------|-------------|
-| ![Desktop View](https://github.com/Sahil-Pant/netflix-homepage-replica/blob/main/assets/desktop.png) | ![Mobile View](https://github.com/Sahil-Pant/netflix-homepage-replica/blob/main/assets/mobile.png) |
+- ✅ Pixel-perfect layout inspired by Netflix
+- ✅ Fully responsive design for all screen sizes
+- ✅ Hover effects for buttons and links
+- ✅ Clean and structured codebase
 
 ---
 
-## 📂 Folder Structure
+
 
