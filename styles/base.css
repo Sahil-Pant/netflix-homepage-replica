@@ -1,0 +1,246 @@
+/* Base Styles */
+:root {
+  --netflix-red: #e50914;
+  --netflix-red-hover: #f40612;
+  --netflix-dark: #141414;
+  --netflix-light-dark: #222222;
+  --netflix-darker: #000000;
+  --netflix-light: #ffffff;
+  --netflix-gray: #757575;
+  --netflix-light-gray: #e5e5e5;
+  --netflix-dark-gray: #303030;
+  --netflix-success: #2ecc71;
+  --netflix-warning: #f39c12;
+  --netflix-error: #e74c3c;
+  
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  
+  --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-large: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: var(--netflix-darker);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--netflix-light);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.25rem;
+}
+
+a {
+  color: var(--netflix-light);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--netflix-red);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, button {
+  font-size: 1rem;
+  outline: none;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.separate {
+  height: 8px;
+  background-color: var(--netflix-light-dark);
+}
+#logo1{
+  width: 150px;
+  filter: brightness(1.1);
+}
+
+/* Container for all sections */
+.main {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/335ddde7-3955-499c-b4cc-ca2eb7e1ae71/a7d20bc1-831c-4f9d-8153-11bdf7a08d23/IN-en-20240624-POP_SIGNUP_TWO_WEEKS-perspective_WEB_13cda806-d858-493e-b4aa-f2792ff965dc_small.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 1;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.subs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 var(--spacing-xl);
+  position: relative;
+  z-index: 2;
+}
+
+.subs h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subs h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin-bottom: var(--spacing-lg);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.subs h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: var(--spacing-lg);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .subs h1 {
+    font-size: 1.75rem;
+  }
+  
+  .subs h2 {
+    font-size: 1.125rem;
+  }
+  
+  .subs h3 {
+    font-size: 1rem;
+  }
+  
+  .feature-section {
+    flex-direction: column;
+  }
+  
+  .feature-section.second {
+    flex-direction: column;
+  }
+  
+  .secimg {
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .accordion-header span {
+    font-size: 1.125rem;
+  }
+  
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: var(--spacing-sm);
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  .btnlang {
+    font-size: 0.75rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+  
+  .btnredsm {
+    font-size: 0.75rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+  
+  .subbtns {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .subbtns input {
+    width: 100%;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
