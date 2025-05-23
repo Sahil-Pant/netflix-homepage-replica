@@ -29,7 +29,7 @@
 
 ## 📁 Project Structure
 
-netflix-homepage-replica/
+netflix-homepage-replica/ <br>
 │
 ├── index.html<br>
 ├── style/<br>
