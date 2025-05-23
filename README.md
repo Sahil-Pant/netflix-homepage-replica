@@ -31,11 +31,14 @@
 
 netflix-homepage-replica/
 │
-├── index.html
-├── style/
-│ └── [base.css, animations.css, components.css, styles.css]
-├── script/
-│ └── [main.js, accordion.js, animations.js dropdown.js]
+├── index.html<br>
+├── style/<br>
+│ └── [base.css,<br>
+  └──  animations.css,<br>
+  └──  components.css,<br>
+  └──  styles.css]<br>
+├── script/<br>
+│ └── [main.js, <br>accordion.js,<br> animations.js,<br> dropdown.js]
 
 
 ---
